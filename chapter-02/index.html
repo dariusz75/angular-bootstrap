@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Contacts List Manager</title>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Angular -->
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/controller.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-toggle">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Contacts List Manager</a>
+		</div>
+		<div class="collapse navbar-collapse" id="nav-toggle">
+			<ul class="nav navbar-nav">
+			<li class="active"><a href="/">Browse</a></li>
+			<li><a href="/add">Add contact</a></li>
+			</ul>
+			<form class="navbar-form navbar-right" role="search">
+			<input type="text" class="form-control" placeholder="Search">
+			</form>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8">
+			Text area.
+			</div>
+			<div class="col-sm-4">
+			Side area.
+			</div>
+		</div>
+	</div>
+</body>
+</html>
