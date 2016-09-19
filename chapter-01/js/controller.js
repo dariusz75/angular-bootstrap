@@ -1,3 +1,3 @@
 function AppCtrl($scope){
-  $scope.name = "my friend";
+  $scope.name = "world";
 }
