@@ -16,7 +16,7 @@ angular.module('contactsMgr', ['ngRoute'])
 Metoda ta przyjmuje anonimową funkcję, do której wstrzykujemy niezbędną usługę
 $routeProvider. Usługa ta oferuje tylko dwie metody: when oraz otherwise. Do tworzenia tras
 służy metoda when, która przyjmuje dwa argumenty: ścieżkę w postaci łańcucha znaków oraz
-opcje trasy w postaci właściwości obiektu:
+opcje trasy w postaci obiektu:
 
 angular.module('contactsMgr', ['ngRoute'])
 .config(function($routeProvider){
@@ -34,29 +34,24 @@ templateUrl: 'assets/partials/index.html'
         controller: 'indexCtrl',
         templateUrl: 'assets/partials/index.html'
     })
-
     .when('/add-contact', {
         controller: 'addCtrl',
         templateUrl: 'assets/partials/add.html'
     })
-
     .when('/contact/:id', {
         controller: 'contactCtrl',
         templateUrl: 'assets/partials/contact.html'
     })
-
     .otherwise({
         redirectTo: '/'
     });
 
-    // Opcjonalnie
+    // optional
     $locationProvider.html5Mode(true);
 
 })
 
-/*-----------------------------------
-| Filter truncate
-------------------------------------*/
+
 
 .filter('truncate', function(){
     return function(input, limit){
