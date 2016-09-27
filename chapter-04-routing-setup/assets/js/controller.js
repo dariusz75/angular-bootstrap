@@ -46,7 +46,7 @@ templateUrl: 'assets/partials/index.html'
         redirectTo: '/'
     });
 
-    // optional
+    // optional - usuwa # z adresu url
     $locationProvider.html5Mode(true);
 
 })
