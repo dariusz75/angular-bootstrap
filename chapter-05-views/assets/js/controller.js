@@ -21,8 +21,8 @@ opcje trasy w postaci obiektu:
 angular.module('contactsMgr', ['ngRoute'])
 .config(function($routeProvider){
 $routeProvider.when('/', {
-controller: 'indexCtrl',
-templateUrl: 'assets/partials/index.html'
+controller: 'homeCtrl',
+templateUrl: 'assets/partials/home.html'
 });
 
 
@@ -31,8 +31,8 @@ templateUrl: 'assets/partials/index.html'
 .config(function($routeProvider, $locationProvider){
 
     $routeProvider.when('/', {
-        controller: 'indexCtrl',
-        templateUrl: 'assets/partials/index.html'
+        controller: 'homeCtrl',
+        templateUrl: 'assets/partials/home.html'
     })
     .when('/add-contact', {
         controller: 'addCtrl',
@@ -60,10 +60,10 @@ templateUrl: 'assets/partials/index.html'
 })
 
 /*-----------------------------------
-| controller index
+| controller home
 ------------------------------------*/
 
-.controller('indexCtrl', function($scope){
+.controller('homeCtrl', function($scope){
 
 })
 
