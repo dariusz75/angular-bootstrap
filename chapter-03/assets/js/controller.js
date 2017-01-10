@@ -1,12 +1,17 @@
  	function AppCtrl($scope){
-        $scope.styleDemo = function(){
-          if(!$scope.styler){
-							return; 
-						}
-          return {
-            background: 'red',
-            fontWeight: 'bold'
-					}; 
+        
+				 $scope.clickHandler = function(){
+          window.alert('Clicked!');
+        };
+
+        $scope.initHandler = function(){
+          window.alert('Opened!');
+        };
+
+        $scope.showHandler = function(){
+        	$scope.isHidden = !$scope.isHidden;
+				};
+
 	};
-}
+
 

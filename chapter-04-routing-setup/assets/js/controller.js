@@ -30,25 +30,29 @@ templateUrl: 'assets/partials/index.html'
 
 .config(function($routeProvider, $locationProvider){
 
+
+
     $routeProvider.when('/', {
-        controller: 'indexCtrl',
-        templateUrl: 'assets/partials/index.html'
-    })
-    .when('/add-contact', {
-        controller: 'addCtrl',
-        templateUrl: 'assets/partials/add.html'
-    })
-    .when('/contact/:id', {
-        controller: 'contactCtrl',
-        templateUrl: 'assets/partials/contact.html'
-    })
-    .otherwise({
-        redirectTo: '/'
-    });
+       controller: 'indexCtrl',
+       templateUrl: 'assets/partials/index.html'
+      })
+      .when('/add', {
+       controller: 'addCtrl',
+       templateUrl: 'assets/partials/add-contact.html'
+      })
+      .when('/contact', {
+       controller: 'contactCtrl',
+       templateUrl: 'assets/partials/contact.html'
+      })
+      .when('/browse', {
+       controller: 'contactCtrl',
+       templateUrl: 'assets/partials/browse-contacts.html'
+      })
+      .otherwise({
+         redirectTo: '/'
+      });
 
-    // optional - usuwa # z adresu url
-    $locationProvider.html5Mode(true);
-
+      $locationProvider.html5Mode(true); /* usuwa # z adresu url */
 })
 
 

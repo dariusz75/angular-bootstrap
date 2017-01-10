@@ -1,0 +1,54 @@
+/* PAGES (specific colors for each page)============*/
+.page-home      { background:#00D1BD; color:#13907c; padding: 20px }
+.page-add     { background:#E59420; color:#a55414; padding: 20px }
+.page-contact   { background:#ffa5bb; color:#9f0000; padding: 20px }
+
+/* ANIMATIONS================================= */
+
+@keyframes rotateFall {
+    0%      { transform: rotateZ(0deg); }
+    20%     { transform: rotateZ(10deg); animation-timing-function: ease-out; }
+    40%     { transform: rotateZ(17deg); }
+    60%     { transform: rotateZ(16deg); }
+    100%    { transform: translateY(100%) rotateZ(17deg); }
+}
+
+/* slide in from the bottom */
+@keyframes slideOutLeft {
+    to      { transform: translateX(-100%); }
+}
+
+@keyframes rotateOutNewspaper {
+    to      { transform: translateZ(-3000px) rotateZ(360deg); opacity: 0; }
+}
+
+@keyframes scaleUp {
+    from    { opacity: 0.5; -webkit-transform: scale(0.5); }
+}
+
+@keyframes scaleDown {
+    from    { opacity: -0.5; -webkit-transform: scale(0.5); }
+}
+
+@keyframes slideInRight {
+    from    { transform:translateX(100%); }
+    to      { transform: translateX(0); }
+}
+
+@keyframes slideInUp {
+    from    { transform:translateY(100%); }
+    to      { transform: translateY(0); }
+}
+
+
+.ng-enter {
+    animation: scaleUp 0.2s both ease-in;
+    z-index: 5555;
+}
+
+/*
+.ng-leave {
+    animation: scaleDown 0.8s both ease-out;
+    z-index: 6666;
+}
+*/
